@@ -1,0 +1,10 @@
+def checkArmstrong(n):
+    a = str(n)
+    b = len(a)
+    c = list(a)
+    d = list(map(int,c))
+    e = 0
+    for i in d:
+        e += i**b
+    if e == n:
+        return "True"
